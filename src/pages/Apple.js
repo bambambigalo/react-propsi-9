@@ -3,7 +3,7 @@ import "./style-pages/style-apple.css";
 import ModalMini from "./madal-pages/ModalMini.js";
 
 export default function Apple() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const openModal = () => {
     setOpen(true);

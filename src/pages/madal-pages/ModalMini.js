@@ -12,7 +12,8 @@ export default function ModalMini(props) {
     {red :  "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-mini-red-select-2020?wid=470&hei=556&fmt=png-alpha&.v=1604343707000"}
     
   ]
-
+  
+  
   return ReactDOM.createPortal(
     <div>
       <div className="modal-overlay">
@@ -26,9 +27,9 @@ export default function ModalMini(props) {
 
           <div className="content">
           <div className="view">
-          {colors.map (color => {
+          {colors.map (c => {
             return (
-              <div  key={color.red} > {color.red} </div>
+              <div  key={c.red} > {c.red} </div>
             )
           })}
             </div>
